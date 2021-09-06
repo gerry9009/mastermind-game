@@ -1,0 +1,193 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17b978;
+    min-width: 340px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    max-height: 600px;
+    min-width: 280px;
+    max-width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(107, 107, 107);
+    background: #f1e2cd; /*#f1e2cd*/
+    border-radius: 6px;
+  }
+  
+  .guess {
+    display: flex;
+  }
+  
+  .guess-border {
+    border-bottom: 2px solid rgb(107, 107, 107);
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .guess-round {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1.5px solid rgb(107, 107, 107);
+    background-color: #ffffff;
+  }
+  
+  .guess-result {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .guess-result-render {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .hit {
+    background: gray;
+    border: 1px solid gray;
+  }
+  
+  .bullseyes {
+    background: rgb(187, 22, 22);
+    border: 1px solid rgb(187, 22, 22);
+  }
+  
+  .none {
+    background: white;
+    border: 1px solid rgb(192, 192, 192);
+  }
+  
+  .selector-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    border-radius: 4px;
+  }
+  
+  .selector {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .green {
+    background-color: rgb(2, 133, 2);
+    border: 1.5px solid rgb(2, 133, 2);
+  }
+  
+  .red {
+    background-color: rgb(255, 0, 0);
+    border: 1.5px solid rgb(255, 0, 0);
+  }
+  
+  .blue {
+    background-color: rgb(1, 1, 250);
+    border: 1.5px solid rgb(1, 1, 250);
+  }
+  
+  .purple {
+    background-color: rgb(128, 0, 128);
+    border: 1.5px solid rgb(128, 0, 128);
+  }
+  
+  .gray {
+    background-color: rgb(128, 128, 128);
+    border: 1.5px solid rgb(128, 128, 128);
+  }
+  
+  .yellow {
+    background-color: rgb(221, 202, 29);
+    border: 1.5px solid rgb(221, 202, 29);
+  }
+  
+  .orange {
+    background-color: rgb(255, 165, 0);
+    border: 1.5px solid rgb(255, 165, 0);
+  }
+  
+  .lightblue {
+    background-color: rgb(132, 196, 218);
+    border: 1.5px solid rgb(132, 196, 218);
+  }
+  
+  .lightgreen {
+    background-color: rgb(55, 216, 55);
+    border: 1.5px solid rgb(55, 216, 55);
+  }
+  
+  .fuchsia {
+    background-color: rgb(255, 0, 255);
+    border: 1.5px solid rgb(255, 0, 255);
+  }
+  
+  .white {
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(255, 255, 255);
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .visibility {
+    visibility: hidden;
+  }
+  
+  .popup {
+    position: absolute;
+    top: 40%;
+    left: calc(50%-250px);
+    z-index: 10;
+    min-width: 220px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 254, 255, 0.8);
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 2px;
+  }
+  
+  .outofwindow {
+    top: -50%;
+  }
+  
+  .message {
+    text-align: center;
+    width: 75%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 15px;
+  }
+  
+  .mainButton {
+    margin: 8px 0;
+    padding: 3px 0;
+    width: 100px;
+    cursor: pointer;
+    background: #1c9464;
+    color: white;
+    border: 1px solid gray;
+  }
+  
