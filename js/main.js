@@ -1,21 +1,8 @@
-/**
- * https://codesandbox.io/s/mastermind-vyr91?file=/main.js
- * 
- * Description of the games
- *
- * feedback area:
- * Each white peg means that one of the guessed pegs is not correct.
- * Each gray peg means that one of the guessed pegs is correct, but is in the wrong hole.
- * Each black peg means that one of the guessed pegs is correct, and is in the right hole.
- * The order of the feedback pegs does not matter.
- * https://www.wikihow.com/Play-Mastermind
- */
-
- var puzzle = []; // puzzle array
- var guess = []; // guessed array
- var guessTableRow = 0; // table row values
- var guessTableColumn = 0; // table column values
- var resultStatus = false; // status of the result
+ let puzzle = []; // puzzle array
+ let guess = []; // guessed array
+ let guessTableRow = 0; // table row values
+ let guessTableColumn = 0; // table column values
+ let resultStatus = false; // status of the result
  let bootsNumber = 0; // game reboots number
  
  const colors = [
